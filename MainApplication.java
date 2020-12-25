@@ -38,7 +38,7 @@ public class MainApplication {
         // TODO code application logic here
         Pig myPig = new Pig(); // Create a Pig object
         //String sound = "wee wee";
-        int age= 4;
+        //int age= 4;
         myPig.animalSound();
         myPig.sleep();
     }
