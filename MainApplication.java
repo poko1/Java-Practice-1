@@ -13,7 +13,7 @@ package main.application;
 // Abstract class
 abstract class Animal {
   // Abstract method (does not have a body)
-  public abstract void animalSound();
+  public abstract void animalSound(String sound);
   // Regular method
   public void sleep() {
     System.out.println("Zzz");
@@ -22,9 +22,9 @@ abstract class Animal {
 
 // Subclass (inherit from Animal)
 class Pig extends Animal {
-  public void animalSound() {
+  public void animalSound(String sound) {
     // The body of animalSound() is provided here
-    System.out.println("The pig says: wee wee");
+    System.out.println("The pig says: "+sound);
   }
 }
 
@@ -36,7 +36,8 @@ public class MainApplication {
     public static void main(String[] args) {
         // TODO code application logic here
         Pig myPig = new Pig(); // Create a Pig object
-        myPig.animalSound();
+        String sound = "wee wee";
+        myPig.animalSound(sound);
         myPig.sleep();
     }
     
